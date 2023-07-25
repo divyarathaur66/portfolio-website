@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- icon stylesheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="wrapper">
+        <div class="sidebar">
+            <!-- profile image -->
+            <div class="profile">
+                <img src="mypic.jpeg" alt="">
+                <h3> Divya Rathaur</h3>
+                <p>Software Developer & Entreprenuer</p>
+             </div>
+             <!-- menu item -->
+             <ul>
+                <li><a href="home.html" class="active"><span class="icon"><i class="fas fa-home"></i></span><span class="item">Home</span></a></li>
+                <li><a href="dash.html"><span class="icon"><i class="fas fa-desktop"></i></span><span class="item">My Dashboard</span></a></li>
+                <!-- <li><a href="#"><span class="icon"><i class="fas fa-tachometer-alt"></i></span><span class="item">Performance</span></a></li> -->
+                <li><a href="intro.html"><span class="icon"><i class="fas fa-user-friends"></i></span><span class="item">About me</span></a></li>
+                <li><a href="services.html"><span class="icon"><i class="fas fa-database"></i></span><span class="item">Services</span></a></li>
+                <!-- <li><a href="#"><span class="icon"><i class="fas fa-chart-line"></i></span><span class="item">Reports</span></a></li> -->
+                <li><a href="blog.html"><span class="icon"><i class="fas fa-chart-line"></i></span><span class="item">Blog</span></a></li>
+                <li><a href="contact.html"><span class="icon"><i class="fas fa-phone"></i></span><span class="item">Contact Me</span></a></li>
+             </ul>
+        </div>
+        <!-- top menu -->
+        <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <!-- <div class="infocontainer">
+            <div class="devinfo"> -->
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae totam culpa aut autem rerum assumenda itaque aliquid reprehenderit inventore consectetur cum magni qui, debitis magnam corrupti tenetur eum ullam quibusdam. Reiciendis voluptatibus itaque possimus explicabo in.
+                </p><br>
+                <h2>My Skills</h2>
+                <div class="skillcontainer">
+                   <div class="skillitem"> HTML: <div class="skill t5" ></div></div><br>
+                    <div class="skillitem">CSS: <div class="skill "></div></div><br>
+                   <div class="skillitem">Javascript: <div class="skill t5"></div></div><br>
+                    <div class="skillitem">PHP: <div class="skill "></div></div><br>
+                   <div class="skillitem">Python:<div class="skill "></div></div><br>
+
+
+                </div>
+                <!-- TODO: Create a gallery for my projects -->
+            </div>
+            <!-- <div class="devPic"><img src="mypic.jpeg"  alt="Divya Rathaur" width="420px" height="420px"/></div> -->
+    </div>
+</div>
+    
+    <!-- How active menu button using javascript -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>

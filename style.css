@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+body{
+    background: #f5f6fa;
+}
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+
+}
+.wrapper .sidebar .profile p{
+    color: rgb(206, 204, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+
+}
+/* link hover  */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+    background: white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+    display: block;
+}
+.wrapper .section{
+    width: calc(100% - 25px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+.wrapper .section .top_navbar{
+    background-color: rgb(7, 105, 105);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.wrappper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+.wrapper .section .top_navbar a:hover{
+    color: #a3ecff;
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+
+}
+body.active .wrapper .section{
+    margin-left: 0% ;
+} 
+.infocontainer{
+   /* background-color: rgb(125, 121, 147);  */
+  height: 68vh;
+  width: 80vw;
+  margin: 144px auto;
+  display: flex;
+}
+.devinfo{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* font-family: 'Roboto', sans-serif; 
+font-family: 'Source Code Pro', monospace;  */
+font-family: 'Roboto', sans-serif;
+/* font-family: 'Source Code Pro', monospace;  */
+
+}
+.hello{
+  font-size: 35px;
+}
+.name{
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.about{
+  font-size: 3em;
+}
+.moreabout{
+  font-size: 20px;
+  font-weight: 450;
+}
+ /* .buttons{
+   margin-top: 2.2em; 
+  font-size: 5px;
+}  */
+
+.btn{
+  padding: 9px 14px;
+  border-radius: 20px;
+  color: white;
+  background-color: purple;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+.btn-sm{
+  font-size: 10px;
+  padding: 7px 13px;
+  margin: 10px 0;
+} 
+.btn:hover{
+  background-color: white;
+  color: purple;
+}
+.devpic img{
+  height: 55vh;
+}
+.contactform{
+  padding: 0 34px;
+   /* padding-top: 140px;  */
+  font-family: 'Roboto', sans-serif;
+  margin: 0 88px;
+}
+
+.contactform h1{
+  font-family: 'Source Code Pro', monospace;
+  font-weight:bold;
+  /* padding: 12px 0; */
+  /* text-align: center;  */
+}
+
+.contactform form div{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactform form div input{
+  /* width: 16vw; */
+  border-radius: 5px; 
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+#emailHelp{
+  font-size: 11px;
+  color: midnightblue;
+  margin: 0 5PX;
+  padding: 3px 0 0 0;
+}
+#form-check{
+  flex-direction: row;
+}
+.form-check input{
+  width: 24px;
+  margin: 3px 0;
+}
+.blogitem{
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.blogcontainer{
+   margin: 10px 88px;
+}
+.blogcontainer h1{
+font-family: 'Roboto', sans-serif;
+margin: 23px;
+}
+.blogitem p{
+  font-family: 'Source Code Pro', monospace;   
+}
+.intro{
+   margin: 10px 88px;
+}
+.intro h2{
+  font-family: 'Roboto', sans-serif;
+  margin: 12px;
+
+}
+.intro p{
+  font-family: 'Roboto', sans-serif;
+  margin: 12px;
+}
+.skillcontainer{
+  padding: 12px;
+}
+.skillitem{
+  display:flex;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;   
+  font-weight: 900;
+}
+.skill{
+  width: 80px;
+  height: 10px;
+  background-color: red;
+  border: 2px solid black;
+}
+.hundred{
+  width:265px;
+  background-color: blueviolet;
+}
+.fifty{
+  width: 125px;
+  background-color: aqua;
+}
+.t5{
+  width: 75px;
+   background-color: yellow; 
+}
+.buttons{
+  font-size: 20px;
+}
+.devinfo{
+  font-size: 10px;
+}
+.devpic{
+  display: none;
+}
+.intro, .blogcontainer, .contactform{
+  margin: 50px 8px;
+}

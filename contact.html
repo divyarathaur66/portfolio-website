@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- icon stylesheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="wrapper">
+        <div class="sidebar">
+            <!-- profile image -->
+            <div class="profile">
+                <img src="mypic.jpeg" alt="">
+                <h3> Divya Rathaur</h3>
+                <p>Software Developer & Entreprenuer</p>
+             </div>
+             <!-- menu item -->
+             <ul>
+                <li><a href="home.html" class="active"><span class="icon"><i class="fas fa-home"></i></span><span class="item">Home</span></a></li>
+                <li><a href="dash.html"><span class="icon"><i class="fas fa-desktop"></i></span><span class="item">My Dashboard</span></a></li>
+                <!-- <li><a href="#"><span class="icon"><i class="fas fa-tachometer-alt"></i></span><span class="item">Performance</span></a></li> -->
+                <li><a href="intro.html"><span class="icon"><i class="fas fa-user-friends"></i></span><span class="item">Aboutt me</span></a></li>
+                <li><a href="services.html"><span class="icon"><i class="fas fa-database"></i></span><span class="item">Services</span></a></li>
+                <!-- <li><a href="#"><span class="icon"><i class="fas fa-chart-line"></i></span><span class="item">Reports</span></a></li> -->
+                <li><a href="blog.html"><span class="icon"><i class="fas fa-chart-line"></i></span><span class="item">Blog</span></a></li>
+                <li><a href="contact.html"><span class="icon"><i class="fas fa-phone"></i></span><span class="item">Contact Me</span></a></li>
+             </ul>
+        </div>
+        <!-- top menu -->
+        <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contactform">
+        <h1 class="contactfomr">Contact me for work/general Enquiries</h1>
+          <form>
+              <div class="mb-3">
+                <label for="clientname" class="form-label">Name</label>
+                <input type="name" class="form-control" id="name1" aria-describedby="clientname">
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div> -->
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="clientphone" class="form-label">Phone</label>
+                <input type="phone" class="form-control" id="clientphone">
+              </div>
+              <div class="mb-3">
+                <label for="Emailhelp" class="form-label">Enquiry</label>
+                <input type="name" class="form-control" id="emailhelp">
+              </div>
+              <!-- <div class="mb-3" id="form-check">
+                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                <label class="form-check-label" for="disabledFieldsetCheck">
+                  Can't check this
+                </label> 
+                <input type="checkbox" class="form-check-input" id="isclient">
+                <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+              </div>  -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      </div>
+</div>
+    
+    <!-- <div class="infocontainer"> -->
+       
+    <!-- How active menu button using javascript -->
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+
+    
+</body>
+</html>
